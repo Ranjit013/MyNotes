@@ -1,0 +1,14 @@
+FunctionalProgramming
+
+1) Fundamental elements used are variables and functions.The data in the functions are immutable(cannot be changed after creation).
+2) It follows declarative programming model.
+3) It uses recursion for iteration.
+4) Does not have any access specifier.
+
+
+Object Oriented Programming.
+1) Fundamental elements used are objects and methods and the data used here are mutable data.
+2) Importance is given to data rather than procedures.
+3) It follows imperative programming model.
+4) It uses loops for iteration.
+5) Has three access specifiers namely, Public, Private and Protected.

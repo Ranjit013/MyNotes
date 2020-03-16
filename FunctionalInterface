@@ -1,0 +1,65 @@
+Functional Programming Basics
+
+Functional programming contains the following key concepts:
+
+Functions as first-class objects
+Pure functions
+Higher-order functions
+
+
+Pure functional programming has a set of rules to follow too:
+No state
+No side effects
+Immutable variables
+Favor recursion over looping
+
+
+No State
+As mentioned in the beginning of this tutorial, a rule of the functional programming paradigm is to have no state. By "no state" is typically meant no state external to the function. A function may have local variables containing temporary state internally, but the function cannot reference any member variables of the class or object the function belongs to.
+
+Here is an example of a function that uses no external state:
+public class Calculator {
+    public int sum(int a, int b) {
+       return a + b;
+    }
+}
+
+Contrarily, here is an example of a function that uses an external state:
+
+public class Calculator {
+    private int initVal = 5;
+    public int sum(int a) {
+       return initVal + a;
+    }
+}
+
+This function clearly violates the no state rule.
+
+No Side Effects
+Another rule in the functional programming paradigm is that of no side effects. This means, that a function cannot change any state outside of the function. Changing state outside of a function is referred to as a side effect.
+State outside of a function refers both to member variables in the class or object the function, and member variables inside parameters to the functions, or state in external systems like file systems or databases.
+Immutable Variables
+A third rule in the functional programming paradigm is that of immutable variables. Immutable variables makes it easier to avoid side effects.
+
+
+
+Java Higher-Order Functions ?
+A higher-order function is a function that either takes a function (method) as a parameter, or returns a function after its execution. In this higher-order tutorial I will show a few examples of higher-order functions in Java.
+
+
+What is Functional Interface?
+
+The term Java functional interface was introduced in Java 8. A functional interface in Java is an interface that contains only a single abstract (unimplemented) method. A functional interface can contain default and static methods which do have an implementation, in addition to the single unimplemented method.
+A Java functional interface can be implemented by a Java Lambda Expression. Here is an example that implements the functional interface MyFunctionalInterface defined in the beginning of this Java functional
+
+
+
+Built-in Functional Interface
+Function
+Predicate
+Supplier
+Consumer
+BiFunction
+
+
+
